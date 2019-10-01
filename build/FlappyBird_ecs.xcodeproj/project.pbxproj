@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		35121503AFE04266B525411C /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5A0D02BA497843C3B665E180 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				0C3714E1272F473AA1EE007E /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		EACAFA450DB143AAADE48FE6 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 819CA7B1575B4B138B5E91D2 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				F7FDD6F7A4FF4DD5A7EF9157 /* CMake Rules */,
+			);
+			dependencies = (
+				FE5DCE8F08804EE898AF7CF9 /* PBXTargetDependency */,
+				CCC128F15C884E9B9A8096AC /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		C9F61EE12343688D00357384 /* FBSpriteManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F61ED92343688C00357384 /* FBSpriteManager.cpp */; };
+		C9F61EE22343688D00357384 /* FBEntityManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F61EDA2343688D00357384 /* FBEntityManager.cpp */; };
+		C9F61EE32343688D00357384 /* FBEntityFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F61EDC2343688D00357384 /* FBEntityFactory.cpp */; };
+		C9F61EE42343688D00357384 /* FlappyBirdGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F61EE02343688D00357384 /* FlappyBirdGame.cpp */; };
+		C9F61EF523436E0A00357384 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F61EF323436E0A00357384 /* app.cpp */; };
+		C9F61EF823436E1500357384 /* render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F61EF723436E1500357384 /* render.cpp */; };
+		DBE5F84D423D422DB6FEB028 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71E9FAB8D4794B549CAB8697 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5842EAD5231B4E48B05256AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB7AABC774044E679629296C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35121503AFE04266B525411C;
+			remoteInfo = ZERO_CHECK;
+		};
+		72D4DBEC63EC46D38917DDB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB7AABC774044E679629296C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35121503AFE04266B525411C;
+			remoteInfo = ZERO_CHECK;
+		};
+		C8C550640CE3472A995880F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB7AABC774044E679629296C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C07C15420B54FB39F1191ED;
+			remoteInfo = Game;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09474A00240A4F44825A731F /* example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = example; sourceTree = BUILT_PRODUCTS_DIR; };
+		71E9FAB8D4794B549CAB8697 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		C9BE0313233FC19500E783A7 /* Simpleton */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Simpleton; path = include/Simpleton; sourceTree = "<group>"; };
+		C9F61ED92343688C00357384 /* FBSpriteManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FBSpriteManager.cpp; sourceTree = "<group>"; };
+		C9F61EDA2343688D00357384 /* FBEntityManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FBEntityManager.cpp; sourceTree = "<group>"; };
+		C9F61EDB2343688D00357384 /* FBSpriteManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FBSpriteManager.hpp; sourceTree = "<group>"; };
+		C9F61EDC2343688D00357384 /* FBEntityFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FBEntityFactory.cpp; sourceTree = "<group>"; };
+		C9F61EDD2343688D00357384 /* FBEntityFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FBEntityFactory.hpp; sourceTree = "<group>"; };
+		C9F61EDE2343688D00357384 /* FlappyBirdGame.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FlappyBirdGame.hpp; sourceTree = "<group>"; };
+		C9F61EDF2343688D00357384 /* FBEntityManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FBEntityManager.hpp; sourceTree = "<group>"; };
+		C9F61EE02343688D00357384 /* FlappyBirdGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FlappyBirdGame.cpp; sourceTree = "<group>"; };
+		C9F61EE52343689F00357384 /* Rect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rect.h; sourceTree = "<group>"; };
+		C9F61EE62343689F00357384 /* Singleton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Singleton.hpp; sourceTree = "<group>"; };
+		C9F61EE7234368BA00357384 /* Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Position.h; sourceTree = "<group>"; };
+		C9F61EE8234368BA00357384 /* AffectedGravity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AffectedGravity.h; sourceTree = "<group>"; };
+		C9F61EE9234368BA00357384 /* HasSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HasSprite.h; sourceTree = "<group>"; };
+		C9F61EEA234368BA00357384 /* Flappable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flappable.h; sourceTree = "<group>"; };
+		C9F61EEB234368BB00357384 /* Hittable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hittable.h; sourceTree = "<group>"; };
+		C9F61EEC234368BB00357384 /* RenderingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderingLayer.h; sourceTree = "<group>"; };
+		C9F61EED234368BB00357384 /* Components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Components.h; sourceTree = "<group>"; };
+		C9F61EEE234368BB00357384 /* PlayerMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerMode.h; sourceTree = "<group>"; };
+		C9F61EEF234368BB00357384 /* Velocity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Velocity.h; sourceTree = "<group>"; };
+		C9F61EF0234368BB00357384 /* KeyInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyInput.h; sourceTree = "<group>"; };
+		C9F61EF1234368BB00357384 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		C9F61EF223436E0900357384 /* constants.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = constants.hpp; path = src/constants.hpp; sourceTree = "<group>"; };
+		C9F61EF323436E0A00357384 /* app.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = app.cpp; path = src/app.cpp; sourceTree = "<group>"; };
+		C9F61EF423436E0A00357384 /* app.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = app.hpp; path = src/app.hpp; sourceTree = "<group>"; };
+		C9F61EF623436E1400357384 /* render.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = render.hpp; path = src/render.hpp; sourceTree = "<group>"; };
+		C9F61EF723436E1500357384 /* render.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = render.cpp; path = src/render.cpp; sourceTree = "<group>"; };
+		E0760B0E177847569E5C04D3 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		34D4A2F7F53B48F39C931F91 = {
+			isa = PBXGroup;
+			children = (
+				C9BE0313233FC19500E783A7 /* Simpleton */,
+				DE5D2A12E757417F86A15332 /* Game */,
+				DF823F6F0BDC43DFBC2E1170 /* ALL_BUILD */,
+				95AEC4A587A447028687FF23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49B31E1DAE864EEFB8D364CF /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9F61ED8234367A100357384 /* FlappyBird */,
+				71E9FAB8D4794B549CAB8697 /* main.cpp */,
+				C9F61EF323436E0A00357384 /* app.cpp */,
+				C9F61EF423436E0A00357384 /* app.hpp */,
+				C9F61EF723436E1500357384 /* render.cpp */,
+				C9F61EF623436E1400357384 /* render.hpp */,
+				C9F61EF223436E0900357384 /* constants.hpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		95AEC4A587A447028687FF23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09474A00240A4F44825A731F /* example */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9BE031B2340865D00E783A7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C9F61EE8234368BA00357384 /* AffectedGravity.h */,
+				C9F61EED234368BB00357384 /* Components.h */,
+				C9F61EEA234368BA00357384 /* Flappable.h */,
+				C9F61EE9234368BA00357384 /* HasSprite.h */,
+				C9F61EEB234368BB00357384 /* Hittable.h */,
+				C9F61EF0234368BB00357384 /* KeyInput.h */,
+				C9F61EEE234368BB00357384 /* PlayerMode.h */,
+				C9F61EE7234368BA00357384 /* Position.h */,
+				C9F61EEC234368BB00357384 /* RenderingLayer.h */,
+				C9F61EF1234368BB00357384 /* Timer.h */,
+				C9F61EEF234368BB00357384 /* Velocity.h */,
+			);
+			name = Components;
+			path = Component;
+			sourceTree = "<group>";
+		};
+		C9BE033323409ADA00E783A7 /* Utill */ = {
+			isa = PBXGroup;
+			children = (
+				C9F61EE52343689F00357384 /* Rect.h */,
+				C9F61EE62343689F00357384 /* Singleton.hpp */,
+			);
+			path = Utill;
+			sourceTree = "<group>";
+		};
+		C9F61ED8234367A100357384 /* FlappyBird */ = {
+			isa = PBXGroup;
+			children = (
+				C9BE033323409ADA00E783A7 /* Utill */,
+				C9BE031B2340865D00E783A7 /* Components */,
+				C9F61EDC2343688D00357384 /* FBEntityFactory.cpp */,
+				C9F61EDD2343688D00357384 /* FBEntityFactory.hpp */,
+				C9F61EDA2343688D00357384 /* FBEntityManager.cpp */,
+				C9F61EDF2343688D00357384 /* FBEntityManager.hpp */,
+				C9F61ED92343688C00357384 /* FBSpriteManager.cpp */,
+				C9F61EDB2343688D00357384 /* FBSpriteManager.hpp */,
+				C9F61EE02343688D00357384 /* FlappyBirdGame.cpp */,
+				C9F61EDE2343688D00357384 /* FlappyBirdGame.hpp */,
+			);
+			name = FlappyBird;
+			path = src/FlappyBirdGame;
+			sourceTree = "<group>";
+		};
+		DE5D2A12E757417F86A15332 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				49B31E1DAE864EEFB8D364CF /* Source Files */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		DF823F6F0BDC43DFBC2E1170 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				E60A63C7E6834079878926A0 /* CMake Rules */,
+				E0760B0E177847569E5C04D3 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		E60A63C7E6834079878926A0 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C07C15420B54FB39F1191ED /* Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC5D63A552A240ACA7EDF09D /* Build configuration list for PBXNativeTarget "Game" */;
+			buildPhases = (
+				65F205FAE60F4284BDABC3D2 /* Sources */,
+				ED995205F9FB4E588BE85475 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2201982ACE434336AC4B9F13 /* PBXTargetDependency */,
+			);
+			name = Game;
+			productName = Game;
+			productReference = 09474A00240A4F44825A731F /* example */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB7AABC774044E679629296C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 504E257CE29A4472928534FC /* Build configuration list for PBXProject "EnTT_Pacman" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34D4A2F7F53B48F39C931F91;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				EACAFA450DB143AAADE48FE6 /* ALL_BUILD */,
+				9C07C15420B54FB39F1191ED /* Game */,
+				35121503AFE04266B525411C /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C3714E1272F473AA1EE007E /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/daeun/gitProject/EnTT-Pacman/build -f /Users/daeun/gitProject/EnTT-Pacman/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		ED995205F9FB4E588BE85475 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/daeun/gitProject/EnTT-Pacman/build -f /Users/daeun/gitProject/EnTT-Pacman/build/CMakeScripts/Game_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		F7FDD6F7A4FF4DD5A7EF9157 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/daeun/gitProject/EnTT-Pacman/build -f /Users/daeun/gitProject/EnTT-Pacman/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65F205FAE60F4284BDABC3D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9F61EE22343688D00357384 /* FBEntityManager.cpp in Sources */,
+				C9F61EE32343688D00357384 /* FBEntityFactory.cpp in Sources */,
+				C9F61EF823436E1500357384 /* render.cpp in Sources */,
+				DBE5F84D423D422DB6FEB028 /* main.cpp in Sources */,
+				C9F61EF523436E0A00357384 /* app.cpp in Sources */,
+				C9F61EE12343688D00357384 /* FBSpriteManager.cpp in Sources */,
+				C9F61EE42343688D00357384 /* FlappyBirdGame.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2201982ACE434336AC4B9F13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35121503AFE04266B525411C /* ZERO_CHECK */;
+			targetProxy = 72D4DBEC63EC46D38917DDB1 /* PBXContainerItemProxy */;
+		};
+		CCC128F15C884E9B9A8096AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C07C15420B54FB39F1191ED /* Game */;
+			targetProxy = C8C550640CE3472A995880F3 /* PBXContainerItemProxy */;
+		};
+		FE5DCE8F08804EE898AF7CF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35121503AFE04266B525411C /* ZERO_CHECK */;
+			targetProxy = 5842EAD5231B4E48B05256AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02D0F7A5A88148F49A0F6CAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/daeun/gitProject/EnTT-Pacman/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		362E139792154483A866C61D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/daeun/gitProject/EnTT-Pacman/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		3F9DA86802704EEDA4F9CDF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/daeun/gitProject/EnTT-Pacman/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		4A31069B28CE48798B41C19F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/daeun/gitProject/EnTT-Pacman/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		4BD09B3D675649B7BF018B7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/SDL2,
+					"/Users/daeun/gitProject/EnTT-Pacman/include",
+					"/Users/daeun/gitProject/EnTT-Pacman/src",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++1z'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/local/lib/libSDL2main.a,
+					/usr/local/lib/libSDL2.dylib,
+					"-framework",
+					Cocoa,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = example;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/daeun/gitProject/EnTT-Pacman/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		4C65A144778047438BB72BFA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/SDL2,
+					"/Users/daeun/gitProject/EnTT-Pacman/include",
+					"/Users/daeun/gitProject/EnTT-Pacman/src",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++1z'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/local/lib/libSDL2main.a,
+					/usr/local/lib/libSDL2.dylib,
+					"-framework",
+					Cocoa,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = example;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/daeun/gitProject/EnTT-Pacman/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		6B24DCA711F142628146CDA3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/daeun/gitProject/EnTT-Pacman/build/build";
+			};
+			name = MinSizeRel;
+		};
+		6C3B17F123C04246A31901B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/SDL2,
+					"/Users/daeun/gitProject/EnTT-Pacman/include",
+					"/Users/daeun/gitProject/EnTT-Pacman/src",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/local/lib/libSDL2main.a,
+					/usr/local/lib/libSDL2.dylib,
+					"-framework",
+					Cocoa,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = example;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/daeun/gitProject/EnTT-Pacman/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		76F7D543A19E4C58B35AD03B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/daeun/gitProject/EnTT-Pacman/build/build";
+			};
+			name = Debug;
+		};
+		78F8F59272DA472CB41ADBDB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/daeun/gitProject/EnTT-Pacman/build/build";
+			};
+			name = RelWithDebInfo;
+		};
+		8BC00D51B12F4BDABE99ED8B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/daeun/gitProject/EnTT-Pacman/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		8E15442A7F4A4F6199407234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/daeun/gitProject/EnTT-Pacman/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		9B730773074849C0BCB75D18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/daeun/gitProject/EnTT-Pacman/build/build";
+			};
+			name = Release;
+		};
+		9F756E4D3D1849F7BE3697C3 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/daeun/gitProject/EnTT-Pacman/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		AF2FD7FC94A04039BCC5B1FC /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/SDL2,
+					"/Users/daeun/gitProject/EnTT-Pacman/include",
+					"/Users/daeun/gitProject/EnTT-Pacman/src",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++1z'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/local/lib/libSDL2main.a,
+					/usr/local/lib/libSDL2.dylib,
+					"-framework",
+					Cocoa,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = example;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/daeun/gitProject/EnTT-Pacman/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		D3EDFFCB24FA40238CD8F1E1 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/daeun/gitProject/EnTT-Pacman/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		504E257CE29A4472928534FC /* Build configuration list for PBXProject "EnTT_Pacman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76F7D543A19E4C58B35AD03B /* Debug */,
+				9B730773074849C0BCB75D18 /* Release */,
+				6B24DCA711F142628146CDA3 /* MinSizeRel */,
+				78F8F59272DA472CB41ADBDB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5A0D02BA497843C3B665E180 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A31069B28CE48798B41C19F /* Debug */,
+				02D0F7A5A88148F49A0F6CAF /* Release */,
+				362E139792154483A866C61D /* MinSizeRel */,
+				9F756E4D3D1849F7BE3697C3 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		819CA7B1575B4B138B5E91D2 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E15442A7F4A4F6199407234 /* Debug */,
+				3F9DA86802704EEDA4F9CDF9 /* Release */,
+				D3EDFFCB24FA40238CD8F1E1 /* MinSizeRel */,
+				8BC00D51B12F4BDABE99ED8B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AC5D63A552A240ACA7EDF09D /* Build configuration list for PBXNativeTarget "Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C3B17F123C04246A31901B7 /* Debug */,
+				4BD09B3D675649B7BF018B7E /* Release */,
+				4C65A144778047438BB72BFA /* MinSizeRel */,
+				AF2FD7FC94A04039BCC5B1FC /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB7AABC774044E679629296C /* Project object */;
+}
